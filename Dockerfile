@@ -9,6 +9,6 @@ ENV DEBCONF_NONINTERACTIVE_SEEN=true \
 
 RUN apt-get update \
     && apt-get upgrade -y \
-    && apt-get install -y git nfs-kernel-server nfs-common \
+    && apt-get install -y git nfs-common \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
